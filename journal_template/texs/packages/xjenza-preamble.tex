@@ -1,0 +1,77 @@
+\documentclass[twoside,a4paper,floatfix,twocolumn,superscriptaddress]{article}%twoside
+\usepackage{../packages/xjenza}
+\usepackage{datetime,tabularx,multirow,subfigure,dblfloatfix}
+\usepackage{graphicx,float}
+\usepackage{fancyhdr,calc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum,cuted,setspace,enumerate}
+\usepackage[ansinew,utf8]{inputenc}
+\usepackage[compact]{titlesec}
+\usepackage{changepage}
+\usepackage{xcolor,colortbl,color}
+\usepackage{soul,hyphenat}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{textgreek, upgreek, tipa}% these should be before amssymb, amsthm and amsmath
+\usepackage{amssymb,amsthm}
+\usepackage{relsize}
+\usepackage{epstopdf}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{balance}
+\usepackage{enumitem}
+\usepackage{placeins}
+\setlist{noitemsep}
+\usepackage{latexsym}
+\usepackage{pdfpages}
+%\usepackage{multicol}
+%\usepackage{flushend}%balancing cols
+
+%--Settings for the modified apa citation style--:::::::::::::::::::::::::::::::::
+%
+%  This method uses the Biblatex package with the biber backend.
+%  After installing the Biblatex package install the 
+%  biblatex-apa citation style. Afterwords, replace the `apa.bbx'
+%  and `apa.cbx' files in the biblatex-apa directory, ex:
+%  /usr/local/share/texmf/tex/latex/biblatex-apa
+%  with the files present in the packages folder.
+
+\usepackage[british]{babel}
+\usepackage[isbn=false,url=false,doi=false,eprint=false,sorting=nyt,backend=biber,style=apa]{biblatex}
+\AtEveryBibitem{% suppressing the month
+  \clearfield{month}
+  \clearfield{day}
+}
+\DeclareLanguageMapping{british}{british-apa}
+\setlength\bibhang{2em}
+%---
+
+%--Item spacing: add \begin{enumerate}[noitemsep,topsep=0pt,
+%--parsep=0pt,partopsep=0pt] to use--:::::::::::::::::::::::::::::::::::::::::::::
+
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+%---
+
+%--New commands--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\newcommand{\udt}[3]{#1^{#2}_{\phantom{#2}#3}}
+\newcommand{\dut}[3]{#1_{#2}^{\phantom{#2}#3}}
+\newcommand{\dudt}[4]{#1_{#2\phantom{#3}#4}^{\phantom{#2}#3}}
+%---
+
+%--Setting section headers--::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+%\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+%\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titleformat{\subparagraph}[runin]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+%---
+
+
+%--paragraph spacing--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\parindent 10 pt
+\parskip 0 pt
+%---
+
+%::::::::::::::::::::::::--End of xjenza-preamble.tex--::::::::::::::::::::::::::%

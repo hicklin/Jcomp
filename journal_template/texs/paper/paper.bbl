@@ -1,0 +1,44 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{nyt}
+    \entry{TestKey}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=33ce05b76269676f78d4db0dcd4e772c}{Tetington}{T\bibinitperiod}{Testy}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=33ce05b76269676f78d4db0dcd4e772c}{Tetington}{T\bibinitperiod}{Testy}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{33ce05b76269676f78d4db0dcd4e772c}
+      \strng{fullhash}{33ce05b76269676f78d4db0dcd4e772c}
+      \field{sortinit}{T}
+      \field{labelyear}{1600}
+      \field{datelabelsource}{year}
+      \field{labeltitle}{{To test or not to test}}
+      \field{journaltitle}{The testing testers}
+      \field{title}{{To test or not to test}}
+      \field{volume}{42}
+      \field{year}{1600}
+      \field{pages}{1599\bibrangedash 1602}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

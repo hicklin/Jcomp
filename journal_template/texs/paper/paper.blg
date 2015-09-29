@@ -1,0 +1,14 @@
+[0] Config.pm:318> INFO - This is Biber 1.8
+[0] Config.pm:321> INFO - Logfile is 'paper.blg'
+[78] biber:275> INFO - === Erb Lul  1, 2015, 09:44:47
+[78] Biber.pm:333> INFO - Reading 'paper.bcf'
+[160] Biber.pm:630> INFO - Found 1 citekeys in bib section 0
+[182] Biber.pm:3053> INFO - Processing section 0
+[202] Biber.pm:3190> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[203] bibtex.pm:933> INFO - Decoding LaTeX character macros into UTF-8
+[204] bibtex.pm:808> INFO - Found BibTeX data source 'bibliography.bib'
+[259] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[259] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
+[259] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[264] bbl.pm:482> INFO - Writing 'paper.bbl' with encoding 'UTF-8'
+[265] bbl.pm:555> INFO - Output to paper.bbl

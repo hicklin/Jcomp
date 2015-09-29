@@ -1,0 +1,26 @@
+referance to figures should be written as Figure
+Titles should not be capilized
+
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+%  The \rules command
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+\newcommand{\rules}{
+\clearpage
+
+%- New headers::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\pagestyle{fancy}
+\rhead{\roman{page}}
+\rfoot{}
+\lhead{}
+\lfoot{}
+\chead{}
+\cfoot{}
+
+
+\renewcommand{\headrulewidth}{0pt} %remove the header underline
+\renewcommand{\footrulewidth}{0pt} %remove the footer underline
+}
+
+
+

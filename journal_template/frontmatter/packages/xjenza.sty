@@ -1,0 +1,70 @@
+% Copyright (C) 2014 William Hicklin. Last revised 04/03/2015.
+
+% This is xjenza.sty, a LaTeX style for the Maltese Journal Xjenza.
+%
+% This package is supplied with a preamble file named `xjenza-preamble.tex'. This
+% file contains a list on commonly used packages in this journal. There are also
+% some new commands and redefinitions which might come in handy for some papers.
+% 
+% This package is also supplied with a `xjenza-main.tex' file which can be
+% changed to `xjenza-Vol-Issue.tex'. This file is where the document is written.
+% 
+% The xjenza package should contain: packages/xjenza.sty, packages/xjenza-
+% preamble.tex, packages/apa.bbx, packages/apa.cbx, xjenza-main.tex.
+% 
+% The `apa.bbx' and `apa.cbx' files should be interchanged with those of the
+% biblatex-apa style. On Linux systems this is normally found in 
+% /usr/local/share/texmf/tex/latex/biblatex-apa
+%
+% If you find any bugs in the style files, or omissions in the documentation,
+% please report them to: E-mail whic0001@um.edu.mt
+
+
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+%  Include required packages.
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+\RequirePackage{fancyhdr}
+\RequirePackage{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{amsthm}
+
+
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+%  Setting margins
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+\setlength{\paperwidth}{597.50787pt}
+\setlength{\paperheight}{845.04684pt}
+\setlength{\textwidth}{497.92322pt} 
+\setlength{\textwidth}{497.92322pt}
+\setlength{\textheight}{654.41338pt}
+\setlength{\oddsidemargin}{-21.33955pt}
+\setlength{\evensidemargin}{-21.33955pt}
+\setlength{\topmargin}{-28.45274pt}
+\setlength{\headheight}{12.0pt}
+\setlength{\headsep}{25.0pt}
+\setlength{\topskip}{10.0pt}
+\setlength{\footskip}{30.0pt}
+\setlength{\marginparwidth}{4.0pt}
+\setlength{\marginparsep}{10.0pt}
+\setlength{\columnsep}{14.22636pt}
+
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+%  The \fmstyle command. Front matter styling
+%%%:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+\newcommand{\fmstyle}{
+\clearpage
+
+%- New headers::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+\pagestyle{fancy}
+\fancyhead[RO]{\roman{pagna}\stepcounter{pagna}}
+\fancyhead[LE]{\roman{pagna}\stepcounter{pagna}}
+\lfoot{}
+\rfoot{}
+\cfoot{}
+
+\renewcommand{\headrulewidth}{0pt} %remove the header underline
+\renewcommand{\footrulewidth}{0pt} %remove the footer underline
+}
